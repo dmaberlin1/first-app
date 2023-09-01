@@ -14,6 +14,8 @@ public class Task5 {
 
         int sumBetweenMinMax=GetSumBetweenMinMax(values,minValueAndMinIndex[1],maxValueAndMinIndex[1]);
         int sumBetweenMinMax2=GetSumBetweenMinMax(values2,minValueAndMinIndex2[1],maxValueAndMinIndex2[1]);
+        System.out.println(minValueAndMinIndex[1]);
+        System.out.println(maxValueAndMinIndex[1]);
         System.out.println(sumBetweenMinMax+" sumBetweenMinMax");
         System.out.println(minValueAndMinIndex2[1]);
         System.out.println(maxValueAndMinIndex2[1]);
@@ -24,7 +26,6 @@ public class Task5 {
         int result=0;
         for (int i = 0; i <values.length ; i++) {
             if((i<minIndex && i>maxIndex) || (i >minIndex && i<maxIndex) ){
-//            if(i>minIndex && i < maxIndex){
                 System.out.println(values[i]);
                 System.out.println(i);
                 result+=values[i];
